@@ -1,0 +1,114 @@
+.contenedor{
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 1080px;
+    position: relative;
+
+}
+div{
+    border: 1px black solid;
+    margin: 0px;
+}
+.header{
+    margin: 1% 5%;
+    background-color: rgb(209, 209, 209);
+    position: sticky;
+    top: 5px;
+    width: 90%;
+    /*position: sticky;
+*/
+}
+.contenido{
+    margin: 1% 5%;
+    top: 50px;
+
+}
+.primario{
+    display: inline-block;
+    vertical-align: top;
+    top: 5px;
+    left: 0px;
+    width: 70%;
+
+    top: 5px;
+
+
+}
+.secundario{
+    display: inline-block;
+    width: 29%;
+
+}
+.pie{
+    bottom: 5px;
+    margin: 1% 5%;
+    text-align: center;
+}
+/*li{
+    display:inline-block;
+    margin-right: 10px;
+    border:1px solid blue;
+    padding: 5px;
+    position: sticky;
+  }
+  
+  li:hover{
+    top:-5px;
+    background: cyan;
+  }
+  */
+  #titulo{
+    display:inline-block;
+    width: 29%;
+    text-align: center;
+
+  }
+
+  
+  .menu{
+    border: 1px black solid;
+    text-align: center;
+    display:inline-block;
+    width: 70%;
+    
+  }
+  
+
+  li{
+    list-style-type:none;
+    
+  }
+  .nav{
+    vertical-align: center;
+
+    margin:10px;
+    width:100%;
+    position:relative;
+  }
+  .nav > li{
+    position:relative;
+    display:inline-block;
+    padding:5px;
+    margin-right:10px;
+    border: 1px solid black;
+    
+  }
+  .nav a{
+    text-decoration:none;
+    
+  }
+  .nav a:hover{
+    color:#aaa; 
+  }
+  .nav ul{
+    position:absolute;
+    display:none;
+    top:30px;
+    background-color:rgb(131, 193, 230);
+  }
+  .nav ul a{
+    white-space: nowrap;
+  }
+  .nav li:hover ul {
+    display:block;
+  }

@@ -1,0 +1,71 @@
+.contenedor{
+    padding: 1%;
+    background-color: cadetblue;
+    height: 1080px;
+    position: relative;
+
+}
+div{
+    border: 1px black solid;
+    margin: 0px;
+}
+.header{
+    margin: 1% 5%;
+    background-color: coral;
+    position: sticky;
+    top: 5px;
+    width: 90%;
+    /*position: sticky;
+*/
+}
+.contenido{
+    margin: 1% 5%;
+    top: 50px;
+
+}
+.primario{
+    display: inline-block;
+    vertical-align: top;
+    top: 5px;
+    left: 0px;
+    width: 70%;
+
+    top: 5px;
+
+
+}
+.secundario{
+    display: inline-block;
+    width: 29%;
+
+}
+.pie{
+    bottom: 5px;
+    margin: 1% 5%;
+    text-align: center;
+}
+li{
+    display:inline-block;
+    margin-right: 10px;
+    border:1px solid blue;
+    padding: 5px;
+    position: sticky;
+  }
+  
+  li:hover{
+    top:-5px;
+    background: cyan;
+  }
+  #titulo{
+    display:inline-block;
+    width: 29%;
+    text-align: center;
+
+  }
+
+  
+  .menu{
+    display:inline-block;
+    width: 70%;
+    
+  }

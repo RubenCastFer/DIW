@@ -1,0 +1,4 @@
+Elecion del color primario #00A599
+Con la regla de la triada he sacado los colores #A61190 para los titulos, #095954 para el fondo del menu 
+y #095954 para los titulos del menu a su vez he usado que al pasar por 
+el enlace usar el color secundario señalado por el manual que es #ff5800.
