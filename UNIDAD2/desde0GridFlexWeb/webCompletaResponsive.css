@@ -38,16 +38,59 @@ body {
      "footer"
   }
 
+  #fotoCentral{
+    width: 450px ;
+  }
+
+  .fotoLateral{
+    width: 450px;
+  }
+
+  .oferta{
+    position: absolute;
+    width: 60px;
+    right: 5px;
+  }
+
+  .tienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: subgrid;*/
+  }
+
   @media only screen and (min-width: 500px)  {
   .wrapper {
 
     grid-template-columns: 20% auto;
     grid-template-areas:
     "header   header"
-    "sidebar  content"
+    "sidebar  sidebar"
+    "content content"
     "sidebar2 sidebar2"
     "footer   footer";
+    
   }
+
+
+  #fotoCentral{
+    width: 800px ;
+  }
+
+  .fotoLateral{
+    width: 180px;
+  }
+
+  .oferta{
+    position: absolute;
+    width: 60px;
+    right: 5px;
+  }
+  .tienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: subgrid;*/
+  }
+
   }
 
   @media only screen and (min-width: 600px)   {
@@ -60,6 +103,26 @@ body {
       "footer  footer  footer";
 
     }
+
+    #fotoCentral{
+      width: 800px ;
+    }
+
+    .fotoLateral{
+      width: 180px;
+    }
+
+    .oferta{
+      position: absolute;
+      width: 60px;
+      right: 5px;
+    }
+
+    .tienda{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /*grid-template-rows: subgrid;*/
+    }
   }
 
 .box {
@@ -68,6 +131,11 @@ body {
   border-radius: 5px;
   padding: 10px;
   font-size: 150%; 
+}
+
+.box .box {
+  background-color: #ccc;
+  color: #444;
 }
 
 .header,
@@ -80,7 +148,29 @@ body {
   color: #444;
 }
 
-.img {
 
-  
+
+.item{
+  background-color: #00d4ff;
+  margin: 25px;
+  position: relative;
+  border-radius: 25px;
 }
+.item:hover{
+  background-color: #ECEFCF;
+  -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.imgTienda{
+  width: 200px;
+}
+
+ul{
+
+  list-style:none;
+  padding-inline-start: 0px;
+  padding-inline-end: 40px;
+
+  }
+
