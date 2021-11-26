@@ -4,6 +4,9 @@ body {
 
 .sidebar {
     grid-area: sidebar;
+    background: rgb(54,59,140);
+    background: linear-gradient(90deg, rgba(54,59,140,1) 0%, rgba(108,125,171,1) 37%, rgba(0,212,255,1) 100%);
+      
   }
 
   .sidebar2 {
@@ -16,6 +19,11 @@ body {
 
   .header {
     grid-area: header;
+    
+    background: rgb(54,59,140);
+    background: linear-gradient(90deg, rgba(54,59,140,1) 0%, rgba(108,125,171,1) 37%, rgba(0,212,255,1) 100%);
+    top: 5px;
+    
   }
 
   .footer {
@@ -174,3 +182,17 @@ ul{
 
   }
 
+  h1{
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #5CDDE5, 0 0 30px #5CDDE5, 0 0 40px #5CDDE5, 0 0 55px #5CDDE5, 0 0 75px #5CDDE5;
+  }
+
+  h3{
+    color: honeydew;
+     text-shadow: #5CDDE5 0px 0px 5px, #5CDDE5 0px 0px 10px, #FFF 0px 0px 15px, #5CDDE5 0px 0px 20px, #5CDDE5 0px 0px 30px, #5CDDE5 0px 0px 40px, #5CDDE5 0px 0px 50px, #5CDDE5 0px 0px 75px;  
+  }
+  a{
+    text-decoration: none;
+  }
