@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // $("div").hover(function(){
+            //     $("div").addClass("rebeccapurple");
+            // });
+
+            $("div").hover(function(){
+                $(this).addClass("yellow");
+            },
+            function(){
+                $(this).removeClass("yellow");
+            });
+
+            $("div").click(function(){
+                $(this).removeClass("rebeccapurple");
+            });
+            $("div").click(function(){
+                $(this).addClass("red");
+            });
+
+        });
+    </script>
+<style>
+.rebeccapurple{
+    background-color: rebeccapurple;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+div{
+border: solid black;
+}
+#a1 {
+    grid-area: a1 ;
+  }
+
+  #a2  {
+    grid-area: a2 ;
+  }
+
+  #a3  {
+    grid-area: a3 ;
+  }  
+
+  #a4  {
+    grid-area: a4 ;
+  }  
+
+  #b1 {
+    grid-area: b1 ;
+  }
+
+  #b2  {
+    grid-area: b2 ;
+  }
+
+  #b3  {
+    grid-area: b3 ;
+  }  
+
+  #b4  {
+    grid-area: b4 ;
+  } 
+
+  #c1 {
+    grid-area: c1 ;
+  }
+
+  #c2  {
+    grid-area: c2 ;
+  }
+
+  #c3  {
+    grid-area: c3 ;
+  }  
+
+  #c4  {
+    grid-area: c4 ;
+  } 
+
+  #d1 {
+    grid-area: d1 ;
+  }
+
+  #d2  {
+    grid-area: d2 ;
+  }
+
+  #d3  {
+    grid-area: d3 ;
+  }  
+
+  #d4  {
+    grid-area: d4 ;
+  } 
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "a1 a2 a3 a4"
+    "b1 b2 b3 b4"
+    "c1 c2 c3 c4"
+    "d1 d2 d3 d4"
+
+      
+    }
+</style>
+    
+<div class="contenedor">
+    <div id="a1" class="rebeccapurple">a1</div>
+    <div id="a2" class="rebeccapurple">a2</div>
+    <div id="a3" class="rebeccapurple">a3</div>
+    <div id="a4" class="rebeccapurple">a4</div>
+    <div id="b1" class="rebeccapurple">b1</div>
+    <div id="b2" class="rebeccapurple">b2</div>
+    <div id="b3" class="rebeccapurple">b3</div>
+    <div id="b4" class="rebeccapurple">b4</div>
+    <div id="c1" class="rebeccapurple">c1</div>
+    <div id="c2" class="rebeccapurple">c2</div>
+    <div id="c3" class="rebeccapurple">c3</div>
+    <div id="c4" class="rebeccapurple">c4</div>
+    <div id="d1" class="rebeccapurple">d1</div>
+    <div id="d2" class="rebeccapurple">d2</div>
+    <div id="d3" class="rebeccapurple">d3</div>
+    <div id="d4" class="rebeccapurple">d4</div>
+</div>
+</body>
+</html>
