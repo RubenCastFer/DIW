@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#minireproductor").click(function(){
+                $(this).prevAll('video').addClass("minireproductor");
+                $(this).prevAll('video').removeClass("estandar");
+                $(this).prevAll('video').removeClass("cine");
+                //.parents('li').css("propiedad", "valor")  
+            });
+
+            $("#estandar").click(function(){
+                $(this).prevAll('video').addClass("estandar");
+                $(this).prevAll('video').removeClass("minireproductor");
+                $(this).prevAll('video').removeClass("cine");
+                //.parents('li').css("propiedad", "valor")  
+            });
+
+            $("#cine").click(function(){
+                $(this).prevAll('video').addClass("cine");
+                $(this).prevAll('video').removeClass("estandar");
+                $(this).prevAll('video').removeClass("minireproductor");
+                //.parents('li').css("propiedad", "valor")  
+            });
+        });
+    </script>
+
+
+<style>
+.minireproductor{
+    width: 300px;
+}
+.estandar{
+    width: 60%;
+}
+.cine{
+    width: 95%;
+}
+</style>
+
+<div class="contenedor">
+    
+    <video class="cine" controls>
+        <source src="Cage The Elephant - Ain't No Rest For The Wicked.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br>
+    <input type="button" id="minireproductor" value="Minireproductor">
+    <input type="button" id="estandar" value="Estandar">
+    <input type="button" id="cine" value="Cine">
+
+</div>
+</body>
+</html>

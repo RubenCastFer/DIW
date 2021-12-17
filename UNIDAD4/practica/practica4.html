@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#iniciar").click(function(){
+                $('img').addClass("imagen");
+                $('img').removeClass("estandar");
+            });
+        });
+    </script>
+    <style> 
+    .estandar{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    .imagen {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes example {
+        0%   { transform: rotate(100deg); left:0px; top:0px;}
+        25%  { transform: rotate(200deg);left:100px; top:0px;}
+        50%  { transform: rotate(250deg);left:200px; top:0px;}
+        75%  { transform: rotate(310deg);left:300px; top:0px;}
+        100%  { transform: rotate(360deg);left:400px; top:0px;}
+
+    }
+</style>        </style>
+        </head>
+        <body>
+        
+        
+        <div>
+            <img class="estandar" src="pelota.png" alt="">
+        </div>
+        <div>
+
+            <input type="button" id="iniciar" value="iniciar">
+        </div>
+        
+</body>
+</html>
