@@ -24,7 +24,7 @@ div{
 
 }
 .primario{
-    float: left;
+    display: inline-block;
     vertical-align: top;
     top: 5px;
     left: 0px;
@@ -32,18 +32,17 @@ div{
     top: 5px;
 }
 .secundario{
-    float: left;
+    display: inline-block;
     width: 29%;
 
 }
 .pie{
-    float: left;
     bottom: 5px;
     margin: 1% 5%;
     text-align: center;
 }
 li{
-    float: left;   
+    display:inline-block;
     margin-right: 10px;
     border:1px solid blue;
     padding: 5px;
