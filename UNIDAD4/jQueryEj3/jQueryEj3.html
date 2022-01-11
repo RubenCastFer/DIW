@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $(".like").click(function(){
+                $(this).parents('div').addClass("contenedorLike");
+                $(this).parents('div').removeClass("contenedor");
+                $(this).parents('div').removeClass("contenedorDislike");
+                //.parents('li').css("propiedad", "valor")
+                
+            });
+            $(".dislike").click(function(){
+                $(this).parents('div').addClass("contenedorDislike");
+                $(this).parents('div').removeClass("contenedor");
+                $(this).parents('div').removeClass("contenedorLike");
+                //.parents('li').css("propiedad", "valor")
+            });
+            // $("#show").click(function(){
+            //   $("p").toggle(“slow”/”fast”);
+            // });
+
+        });
+    </script>
+    <style>
+        .contenedor{
+            background: white;
+        }
+        .contenedorLike{
+            background: turquoise;
+        }
+        .contenedorDislike{
+            background: red;
+        }
+    </style>
+    <div class="contenedor">
+        <img src="image/[Glitch Hop or 110BPM] - Tristam - Till It's Over [Monstercat Release].jpg" alt="" width="80px">
+        <audio class="audio" controls autoplay>
+            <source src="musica/[Glitch Hop or 110BPM] - Tristam - Till It's Over [Monstercat Release].mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <img class="like" src="image/like.png" alt="" width="30px">
+        <img class="dislike" src="image/dislike.png" alt="" width="30px">
+    </div>
+    <div class="contenedor">
+        <img src="image/Daft Punk - Harder, Better, Faster, Stronger (Far Out Remix).jpg" alt="" width="80px">
+        <audio class="audio" controls autoplay>
+            <source src="musica/Daft Punk - Harder, Better, Faster, Stronger (Far Out Remix).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <img class="like" src="image/like.png" alt="" width="30px">
+        <img class="dislike" src="image/dislike.png" alt="" width="30px">
+    </div>
+    <div class="contenedor"> 
+        <img src="image/Mike Vallas - Take A Pill.jpg" alt="" width="80px">
+        <audio class="audio" controls autoplay>
+            <source src="musica/Mike Vallas - Take A Pill.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <img class="like" src="image/like.png" alt="" width="30px">
+        <img class="dislike" src="image/dislike.png" alt="" width="30px">
+    </div>
+    
+</body>
+</html>

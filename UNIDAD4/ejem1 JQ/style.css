@@ -1,0 +1,48 @@
+div{
+    border: solid black;
+}
+.cabeza {
+    grid-area: cabeza;
+  }
+
+  .contenido {
+    grid-area: contenido;
+  }
+
+  .menu1 {
+    grid-area: menu1;
+    display: block;
+  }  
+
+  .menu2 {
+    grid-area: menu2;
+    display: none;
+  }  
+
+  .contenedor {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "cabeza"
+     "menu1"
+     "contenido"
+  }
+
+  @media only screen and (min-width: 500px)  {
+    .contenedor {
+  
+      grid-template-columns: 20% auto;
+      grid-template-areas:
+      "cabeza   cabeza"
+      "menu2  menu2"
+      "contenido contenido"
+
+      
+    }
+    .menu1{
+        display: none;    
+    }
+    .menu2{
+        display: block;
+    }
+  }

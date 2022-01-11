@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cabeza"><img src=""></div>
+        <div class="menu1">
+            <img id="button" src="pngegg.png" alt="" width="40px">
+            <ul>
+                <li>linea1</li>
+                <li>linea2</li>
+                <li>linea3</li>
+                <li>linea4</li>
+                <li>linea5</li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#button").click(function(){
+                    $("ul").toggle();
+                });
+            });
+        </script>
+        <div class="menu2"></div>
+        <div class="contenido">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ut quibusdam omnis aliquid, eaque et soluta cum quo at optio incidunt maiores, exercitationem voluptatem dolores nostrum accusamus, obcaecati animi fugit.</div>
+    </div>
+    
+</body>
+</html>
