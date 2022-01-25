@@ -61,7 +61,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="suscripcion.html">SUSCRIPCIÓN</a>
+                                <a class="nav-link" href="#">SUSCRIPCIÓN</a>
                             </li>
                         </ul>
                         <form class="d-flex">
@@ -79,89 +79,82 @@
                 <br>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4 mb-3">
-                <img class="img-fluid" src="image/lawOfTheDevil.png" alt="">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Bienvenido a Aventuras Subrayadas</h1>
+            <p class="fs-5 text-muted">Lee nuestra colección de libros gratuitos o accede a mucho más con nuestras suscripciones.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">0€<small class="text-muted fw-light">/Mes</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Acceso a librerias gratuitas</li>
+                            <li>Acceso limitado a Foros</li>
+                            <li>Soporte</li>
+                            <li><br></li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Registrate gratis
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-8 text-center m-auto">
-                <h1>Law Of The Devil</h1>
-                <p>Un bueno para nada, es considerado un desperdicio de persona y un idiota, el acabó vendiendo su alma al diablo a cambio de qué? ¿Belleza? ¿Poder? ¿Riqueza? ¿Potestades?. A cambio de; Derrotar todas las reglas de este mundo, hacerse respetar y seguir a través del camino del Diablo …… “¡Sé que un día el mundo será pisoteado bajo mis pies!”</p>
-                <ul class="">
-                    <li class="btn badge bg-primary m-1">Acción</li>
-                    <li class="btn badge bg-secondary m-1">Aventuras</li>
-                    <li class="btn badge bg-danger m-1">Drama</li>
-                    <li class="btn badge bg-success m-1">Fantasía</li>
-                    <li class="btn badge bg-danger m-1">Marcial</li>
-                    <li class="btn badge bg-secondary m-1">Misterio</li>
-                    <li class="btn badge bg-warning m-1">Psicológico</li>
-                </ul>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">4€<small class="text-muted fw-light">/Mes</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Acceso a todas las librerias</li>
+                            <li>Acceso limitado a Foros</li>
+                            <li>Soporte</li>
+                            <li><br></li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Empezar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Master</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">10€<small class="text-muted fw-light">/Mes</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Acceso a todas las librerias</li>
+                            <li>Acceso limitado a Foros</li>
+                            <li>Soporte</li>
+                            <li>Recibe una versión física mensual</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Gracias por apoyar</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Capitulo</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col">Fecha Publicación</th>
-                  </tr>
-                </thead>
-                <a href=""></a>
-                <tbody id="cuerpoTabla">
-                <script>
-                    const tiempoTranscurrido = Date.now();
-                    const hoy = new Date(tiempoTranscurrido);
-                    console.log(hoy);
+    </div>
 
 
-
-                    var cuerpoTabla = document.getElementById("cuerpoTabla");
-                    for (let i = 0; i < 100; i++) {
-                        var tr = document.createElement("tr");
-                        var td1 = document.createElement("td");
-                        
-                        var enlace= document.createElement("a");
-                        enlace.setAttribute("href","capitulo.html");
-                        enlace.setAttribute("class","link-primary");
-                        enlace.setAttribute("style","text-decoration:none");
-
-                        
-                        var txt1=document.createTextNode("Law Of The Devil "+i );
-                        enlace.appendChild(txt1);
-                        td1.appendChild(enlace);
-                        tr.appendChild(td1);
-
-                        var td2 = document.createElement("td");
-                        var  txt2=document.createTextNode("Ruben Castellano");
-                        td2.appendChild(txt2);
-                        tr.appendChild(td2);
-
-                        var td3 = document.createElement("td");
-                        var txt3=document.createTextNode(hoy.toLocaleDateString());
-                        td3.appendChild(txt3);
-                        tr.appendChild(td3);
-
-                        cuerpoTabla.appendChild(tr);
-                    }
-                </script>
-                </tbody>
-              </table>
-        </div>
 
 
     </div>
     <div class="container">
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2021 Company, Inc</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 Company, Inc</p>
         </footer>
-      </div>
+    </div>
     </div>
 </body>
 
