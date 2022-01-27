@@ -157,13 +157,13 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="portadaAdmin.html">
                                 <span data-feather="home"></span>
                                 Tablero
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">
                                 <span data-feather="file"></span>
                                 Perfil
                             </a>
@@ -209,7 +209,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="soporteAdmin.html">
+                            <a class="nav-link active" href="soporteAdmin.html">
                                 <span data-feather="file-text"></span>
                                 Soporte
                             </a>
@@ -221,110 +221,60 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Tablero</h1>
+                    <h1 class="h2">Soporte</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
-                        <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                        </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar"></span>
-                            Esta Semana
+                        
+                        <button type="button" class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="bi bi-question-circle"></i>
+                            Enviar
                         </button>
                     </div>
                 </div>
 
-                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-                <!-- <img src="image/grafico.png" class="my-4 w-100" alt=""> -->
-                <h2>Publicaciones</h2>
-                <div class="row">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Capitulo</th>
-                                <th scope="col">Autor</th>
-                                <th scope="col">Fecha Publicación</th>
-                                <th scope="col">Visualizar</th>
-                                <th scope="col">Editar</th>
-                                <th scope="col">Borrar</th>
+                <form class="was-validated">
+                    <div class="col-4 mb-3">
+                        <select class="form-select" required aria-label="select example">
+                          <option value="">Motivo</option>
+                          <option value="1">Problemas Técnicos</option>
+                          <option value="2">Solicitudes</option>
+                          <option value="3">Procedimientos</option>
+                        </select>
+                        <div class="invalid-feedback">Es necesario seleccionar un motivo</div>
+                      </div>
 
-                            </tr>
-                        </thead>
-                        <a href=""></a>
-                        <tbody id="cuerpoTabla">
-                            <script>
-                                const tiempoTranscurrido = Date.now();
-                                const hoy = new Date(tiempoTranscurrido);
-                                console.log(hoy);
+                    <div class="mb-3 col-6">
+                      <label for="validationTextarea" class="form-label">Descripción</label>
+                      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                      <div class="invalid-feedback">
+                      </div>
+                    </div>
+                  
+                    <div class="form-check mb-3">
+                      <input type="checkbox" class="form-check-input" id="validationFormCheck1">
+                      <label class="form-check-label" for="validationFormCheck1">Añade documetación</label>
+                    </div>
+                  
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                      <label class="form-check-label" for="validationFormCheck2">Accepta que revisemos sus log e información</label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                      <label class="form-check-label" for="validationFormCheck3">Rechaza que revisemos sus log e información</label>
+                      <div class="invalid-feedback">Marque una de las opciones</div>
+                    </div>
+                  
+                    
+                  
+                    <div class="mb-3 col-6">
+                      <input type="file" class="form-control" aria-label="file example">
+                    </div>
+                  
+                    <div class="mb-3">
+                      <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+                    </div>
+                  </form>   
 
-
-
-                                var cuerpoTabla = document.getElementById("cuerpoTabla");
-                                for (let i = 100; i >= 80; i--) {
-                                    var tr = document.createElement("tr");
-                                    var td1 = document.createElement("td");
-
-                                    var enlace = document.createElement("a");
-                                    enlace.setAttribute("href", "capitulo.html");
-                                    enlace.setAttribute("class", "link-primary");
-                                    enlace.setAttribute("style", "text-decoration:none");
-
-
-                                    var txt1 = document.createTextNode("Law Of The Devil " + i);
-                                    enlace.appendChild(txt1);
-                                    td1.appendChild(enlace);
-                                    tr.appendChild(td1);
-
-                                    var td2 = document.createElement("td");
-                                    var txt2 = document.createTextNode("Ruben Castellano");
-                                    td2.appendChild(txt2);
-                                    tr.appendChild(td2);
-
-                                    var td3 = document.createElement("td");
-                                    var txt3 = document.createTextNode(hoy.toLocaleDateString());
-                                    td3.appendChild(txt3);
-                                    tr.appendChild(td3);
-
-                                    var visualizar = document.createElement("a");
-                                    visualizar.setAttribute("href", "editar.html");
-                                    visualizar.setAttribute("class", "link-info");
-                                    visualizar.setAttribute("style", "text-decoration:none");
-
-                                    var td4 = document.createElement("td");
-                                    var txt4 = document.createTextNode("Visualizar");
-                                    visualizar.appendChild(txt4);
-                                    td4.appendChild(visualizar);
-                                    tr.appendChild(td4);
-
-                                    var editar = document.createElement("a");
-                                    editar.setAttribute("href", "capitulo.html");
-                                    editar.setAttribute("class", "link-success");
-                                    editar.setAttribute("style", "text-decoration:none");
-
-                                    var td5 = document.createElement("td");
-                                    var txt5 = document.createTextNode("Editar");
-                                    editar.appendChild(txt5);
-                                    td5.appendChild(editar);
-                                    tr.appendChild(td5);
-
-
-                                    var borrar = document.createElement("a");
-                                    borrar.setAttribute("href", "capitulo.html");
-                                    borrar.setAttribute("class", "link-danger");
-                                    borrar.setAttribute("style", "text-decoration:none");
-
-                                    var td6 = document.createElement("td");
-                                    var txt6 = document.createTextNode("Borrar");
-                                    borrar.appendChild(txt6);
-                                    td6.appendChild(borrar);
-                                    tr.appendChild(td6);
-
-                                    cuerpoTabla.appendChild(tr);
-                                }
-                            </script>
-                        </tbody>
-                    </table>
-                </div>
             </main>
         </div>
     </div>
