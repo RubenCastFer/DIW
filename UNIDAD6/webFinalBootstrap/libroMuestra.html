@@ -67,6 +67,7 @@
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-dark btn-outline-light ms-5" type="submit">Iniciar</button>
                         </form>
                     </div>
                 </div>
@@ -85,7 +86,10 @@
             </div>
             <div class="col-12 col-lg-8 text-center m-auto">
                 <h1>Law Of The Devil</h1>
-                <p>Un bueno para nada, es considerado un desperdicio de persona y un idiota, el acabó vendiendo su alma al diablo a cambio de qué? ¿Belleza? ¿Poder? ¿Riqueza? ¿Potestades?. A cambio de; Derrotar todas las reglas de este mundo, hacerse respetar y seguir a través del camino del Diablo …… “¡Sé que un día el mundo será pisoteado bajo mis pies!”</p>
+                <p>Un bueno para nada, es considerado un desperdicio de persona y un idiota, el acabó vendiendo su alma
+                    al diablo a cambio de qué? ¿Belleza? ¿Poder? ¿Riqueza? ¿Potestades?. A cambio de; Derrotar todas las
+                    reglas de este mundo, hacerse respetar y seguir a través del camino del Diablo …… “¡Sé que un día el
+                    mundo será pisoteado bajo mis pies!”</p>
                 <ul class="">
                     <li class="btn badge bg-primary m-1">Acción</li>
                     <li class="btn badge bg-secondary m-1">Aventuras</li>
@@ -100,68 +104,68 @@
         <div class="row">
             <table class="table">
                 <thead>
-                  <tr>
-                    <th scope="col">Capitulo</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col">Fecha Publicación</th>
-                  </tr>
+                    <tr>
+                        <th scope="col">Capitulo</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Fecha Publicación</th>
+                    </tr>
                 </thead>
                 <a href=""></a>
                 <tbody id="cuerpoTabla">
-                <script>
-                    const tiempoTranscurrido = Date.now();
-                    const hoy = new Date(tiempoTranscurrido);
-                    console.log(hoy);
+                    <script>
+                        const tiempoTranscurrido = Date.now();
+                        const hoy = new Date(tiempoTranscurrido);
+                        console.log(hoy);
 
 
 
-                    var cuerpoTabla = document.getElementById("cuerpoTabla");
-                    for (let i = 0; i < 100; i++) {
-                        var tr = document.createElement("tr");
-                        var td1 = document.createElement("td");
-                        
-                        var enlace= document.createElement("a");
-                        enlace.setAttribute("href","capitulo.html");
-                        enlace.setAttribute("class","link-primary");
-                        enlace.setAttribute("style","text-decoration:none");
+                        var cuerpoTabla = document.getElementById("cuerpoTabla");
+                        for (let i = 0; i < 100; i++) {
+                            var tr = document.createElement("tr");
+                            var td1 = document.createElement("td");
 
-                        
-                        var txt1=document.createTextNode("Law Of The Devil "+i );
-                        enlace.appendChild(txt1);
-                        td1.appendChild(enlace);
-                        tr.appendChild(td1);
+                            var enlace = document.createElement("a");
+                            enlace.setAttribute("href", "capitulo.html");
+                            enlace.setAttribute("class", "link-primary");
+                            enlace.setAttribute("style", "text-decoration:none");
 
-                        var td2 = document.createElement("td");
-                        var  txt2=document.createTextNode("Ruben Castellano");
-                        td2.appendChild(txt2);
-                        tr.appendChild(td2);
 
-                        var td3 = document.createElement("td");
-                        var txt3=document.createTextNode(hoy.toLocaleDateString());
-                        td3.appendChild(txt3);
-                        tr.appendChild(td3);
+                            var txt1 = document.createTextNode("Law Of The Devil " + i);
+                            enlace.appendChild(txt1);
+                            td1.appendChild(enlace);
+                            tr.appendChild(td1);
 
-                        cuerpoTabla.appendChild(tr);
-                    }
-                </script>
+                            var td2 = document.createElement("td");
+                            var txt2 = document.createTextNode("Ruben Castellano");
+                            td2.appendChild(txt2);
+                            tr.appendChild(td2);
+
+                            var td3 = document.createElement("td");
+                            var txt3 = document.createTextNode(hoy.toLocaleDateString());
+                            td3.appendChild(txt3);
+                            tr.appendChild(td3);
+
+                            cuerpoTabla.appendChild(tr);
+                        }
+                    </script>
                 </tbody>
-              </table>
+            </table>
         </div>
 
 
     </div>
     <div class="container">
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2021 Company, Inc</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 Company, Inc</p>
         </footer>
-      </div>
+    </div>
     </div>
 </body>
 
